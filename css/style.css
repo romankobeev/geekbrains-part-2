@@ -1079,6 +1079,60 @@ header .header-block__cart-count {
   display: flex;
 }
 
+.product-slider .container-slider {
+  position: relative;
+  height: 624px;
+  overflow: hidden;
+}
+
+@media (min-width: 1140px) {
+  .product-slider .container-slider {
+    height: 777px;
+  }
+}
+
+@media (min-width: 1546px) {
+  .product-slider .container-slider {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.product-slider .container-slider img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  height: 100%;
+}
+
+@media (min-width: 1546px) {
+  .product-slider .container-slider img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.product-slider .container-slider__arrow-left {
+  width: 47px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.product-slider .container-slider__arrow-right {
+  width: 47px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
 .footer-block {
   background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../img/bg-footer.jpg");
   background-position: 28% center;
