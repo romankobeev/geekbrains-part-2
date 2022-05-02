@@ -36,6 +36,27 @@ img {
   }
 }
 
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .container-fluid {
+    max-width: 1140px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 header {
   background-color: #222222;
 }
@@ -1067,15 +1088,30 @@ header .header-block__cart-count {
   max-width: 100%;
 }
 
+.items-block-product .items-block__cards .item-card:nth-child(2) {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .items-block-product .items-block__cards .item-card {
     max-width: 360px;
+  }
+  .items-block-product .items-block__cards .item-card:nth-child(2) {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .items-block-product .items-block__cards .item-card:last-child {
+    display: none;
   }
 }
 
 @media (min-width: 1140px) {
   .items-block-product .items-block__cards .item-card {
     max-width: 360px;
+  }
+  .items-block-product .items-block__cards .item-card:last-child {
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1490,6 +1526,15 @@ header .header-block__cart-count {
   margin-bottom: -64px;
   border: 1px solid #EAEAEA;
   padding-top: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .block-collection {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .block-collection__title {
@@ -1501,6 +1546,7 @@ header .header-block__cart-count {
   font-size: 14px;
   color: #F16D7F;
   margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .block-collection__title--redline {
@@ -1561,9 +1607,126 @@ header .header-block__cart-count {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 642px;
+  width: 174px;
   height: 1px;
   background-color: #EAEAEA;
+}
+
+@media (min-width: 768px) {
+  .block-collection__line:after {
+    width: 642px;
+  }
+}
+
+.block-collection__filter {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: relative;
+  margin-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+  .block-collection__filter {
+    margin-bottom: 40px;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
+@media (min-width: 1140px) {
+  .block-collection__filter {
+    margin-bottom: 48px;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
+.block-collection__filter-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+  .block-collection__filter-wrap {
+    width: auto;
+  }
+}
+
+.block-collection__filter-wrap-title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 17px;
+  color: #6F6E6E;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .block-collection__filter-wrap-title {
+    font-size: 14px;
+    margin: 0 14px;
+  }
+}
+
+.block-collection__filter-wrap-title a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-left: 10px;
+}
+
+.block-collection__btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 64px;
+}
+
+.block-collection__btn .btn-add-cart {
+  display: inline-block;
+  position: relative;
+  padding: 0 39px 0 59px;
+  line-height: 48px;
+  border: 1px solid #FF6A6A;
+  font-weight: 400;
+  font-size: 16px;
+  color: #F26376;
+  text-decoration: none;
+  text-align: center;
+}
+
+.block-collection__btn .btn-add-cart:before {
+  position: absolute;
+  content: '';
+  background-image: url("../img/cart-red.svg");
+  width: 27px;
+  height: 25px;
+  left: 25px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.block-collection__btn .btn-add-cart:hover {
+  background: #F16D7F;
+  border: 1px solid #FF6A6A;
+  color: #fff;
+}
+
+.block-collection__btn .btn-add-cart:hover:before {
+  background-image: url("../img/cart-white.svg");
 }
 
 .footer-block {
