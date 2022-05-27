@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная</title>
+    <title>Каталог</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -16,42 +16,31 @@
         </div>
       </div>
     </header>
-    <div class="header-banner">
+    <!--include ../includes/main-->
+    <div class="new-arrival">
       <div class="container">
-        <div class="header-banner__wrapper">
-          <p class="header-banner__title">THE BRAND <br><span class="header-banner__subtitle"> OF LUXERIOUS</span><span class="header-banner__subtitle red"> FASHION</span></p>
-        </div>
-      </div>
-    </div>
-    <div class="main-block">
-      <div class="container">
-        <div class="cards">
-          <div class="cards-item card-1">
-            <p class="cards-item__title">30% OFF</p>
-            <p class="cards-item__subtitle">FOR WOMAN</p>
-          </div>
-          <div class="card-item card-2">
-            <p class="cards-item__title">HOT DEAL</p>
-            <p class="cards-item__subtitle">FOR MEN</p>
-          </div>
-          <div class="cards-item card-3">
-            <p class="cards-item__title">NEW ARRIVALS</p>
-            <p class="cards-item__subtitle">FOR KIDS</p>
-          </div>
-          <div class="cards-item card-4">
-            <p class="cards-item__title">LUXIROUS & TRENDY</p>
-            <p class="cards-item__subtitle">ACCESORIES</p>
+        <div class="block-arrival"><span class="block-arrival__title">NEW ARRIVALS</span>
+          <div class="bread-crumb"><a class="block-arrival__link" href="#">HOME</a>
+            <div class="block-arrival__link">/</div><a class="block-arrival__link" href="#">MEN</a>
+            <div class="block-arrival__link">/</div><a class="block-arrival__link active" href="#">NEW ARRIVALS</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="items-block container">
-      <div class="items-block__main-title">
-        <h2>Featured Items</h2><span>Shop for items based on what we featured in this week</span>
+    <div class="items-block-catalog container">
+      <div class="items-block__filter">
+        <div class="items-block__filter-sort">
+          <div class="filter-text">FILTER</div><a class="sort-btn" href="#"><img src="img/sort.svg" alt="#"></a>
+        </div>
+        <div class="items-block__filter-wrap">
+          <div class="items-block__filter-wrap-title">TRENDING NOW<a href="#"><img src="img/arrow-down.svg" alt="#"></a></div>
+          <div class="items-block__filter-wrap-title">SIZE<a href="#"><img src="img/arrow-down.svg" alt="#"></a></div>
+          <div class="items-block__filter-wrap-title">PRICE<a href="#"><img src="img/arrow-down.svg" alt="#"></a></div>
+        </div>
       </div>
       <div class="items-block__cards">
         <div class="item-card">
-          <div class="img-block"><img src="img/item-card/item-card-1.jpg" alt="#">
+          <div class="img-block"><img src="img/catalog/catalog-card-1.jpg" alt="#">
             <div class="img-block__cart"><a class="img-block__cart-title" href="#">Add to Cart</a></div>
           </div>
           <div class="item-card__body">
@@ -67,7 +56,7 @@
           </div>
         </div>
         <div class="item-card">
-          <div class="img-block"><img src="img/item-card/item-card-2.jpg" alt="#">
+          <div class="img-block"><img src="img/catalog/catalog-card-2.jpg" alt="#">
             <div class="img-block__cart"><a class="img-block__cart-title" href="#">Add to Cart</a></div>
           </div>
           <div class="item-card__body">
@@ -83,7 +72,7 @@
           </div>
         </div>
         <div class="item-card">
-          <div class="img-block"><img src="img/item-card/item-card-3.jpg" alt="#">
+          <div class="img-block"><img src="img/catalog/catalog-card-3.jpg" alt="#">
             <div class="img-block__cart"><a class="img-block__cart-title" href="#">Add to Cart</a></div>
           </div>
           <div class="item-card__body">
@@ -99,7 +88,7 @@
           </div>
         </div>
         <div class="item-card">
-          <div class="img-block"><img src="img/item-card/item-card-4.jpg" alt="#">
+          <div class="img-block"><img src="img/catalog/catalog-card-4.jpg" alt="#">
             <div class="img-block__cart"><a class="img-block__cart-title" href="#">Add to Cart</a></div>
           </div>
           <div class="item-card__body">
@@ -115,7 +104,7 @@
           </div>
         </div>
         <div class="item-card">
-          <div class="img-block"><img src="img/item-card/item-card-5.jpg" alt="#">
+          <div class="img-block"><img src="img/catalog/catalog-card-5.jpg" alt="#">
             <div class="img-block__cart"><a class="img-block__cart-title" href="#">Add to Cart</a></div>
           </div>
           <div class="item-card__body">
@@ -131,7 +120,55 @@
           </div>
         </div>
         <div class="item-card">
-          <div class="img-block"><img src="img/item-card/item-card-6.jpg" alt="#">
+          <div class="img-block"><img src="img/catalog/catalog-card-6.jpg" alt="#">
+            <div class="img-block__cart"><a class="img-block__cart-title" href="#">Add to Cart</a></div>
+          </div>
+          <div class="item-card__body">
+            <div class="card__title">
+              <h3>ELLERY X M'O CAPSULE</h3>
+            </div>
+            <div class="card__subtitle">
+              <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            </div>
+            <div class="card__price">
+              <p>$52.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="img-block"><img src="img/catalog/catalog-card-7.jpg" alt="#">
+            <div class="img-block__cart"><a class="img-block__cart-title" href="#">Add to Cart</a></div>
+          </div>
+          <div class="item-card__body">
+            <div class="card__title">
+              <h3>ELLERY X M'O CAPSULE</h3>
+            </div>
+            <div class="card__subtitle">
+              <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            </div>
+            <div class="card__price">
+              <p>$52.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="img-block"><img src="img/catalog/catalog-card-8.jpg" alt="#">
+            <div class="img-block__cart"><a class="img-block__cart-title" href="#">Add to Cart</a></div>
+          </div>
+          <div class="item-card__body">
+            <div class="card__title">
+              <h3>ELLERY X M'O CAPSULE</h3>
+            </div>
+            <div class="card__subtitle">
+              <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            </div>
+            <div class="card__price">
+              <p>$52.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="img-block"><img src="img/catalog/catalog-card-9.jpg" alt="#">
             <div class="img-block__cart"><a class="img-block__cart-title" href="#">Add to Cart</a></div>
           </div>
           <div class="item-card__body">
@@ -147,7 +184,9 @@
           </div>
         </div>
       </div>
-      <div class="items-block__btn"><a class="btn-all-product" href="">Browse All Product</a></div>
+      <div class="paginate-block__btn">
+        <div class="paginate-block__wrapper"><a href=""><img src="img/arrow-left.svg" alt="#"></a><a class="btn-paginate" href="">1</a><a class="btn-paginate" href="">2</a><a class="btn-paginate" href="">3</a><a class="btn-paginate" href="">4</a><a class="btn-paginate" href="">5</a><a class="btn-paginate" href="">6</a><a class="btn-paginate" href="">.....</a><a class="btn-paginate" href="">20</a><a href=""><img src="img/arrow-right.svg" alt="#"></a></div>
+      </div>
     </div>
     <div class="benefit-block">
       <div class="benefit-block__items container">
